@@ -1,0 +1,205 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    margin-top: 200px!important;
+    margin-bottom: 200px!important;
+}
+
+/* Título de la página */
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+/* Estilos del carrito */
+#checkout-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    align-items: center;
+}
+
+.card-body {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.card-body h5 {
+    font-size: 1.25rem;
+    color: #333;
+    margin-right: 15px;
+}
+
+.card-body p {
+    color: #555;
+    font-size: 1rem;
+}
+
+.card-body button {
+    background-color: #dc3545;
+    border: none;
+    color: #fff;
+    font-size: 1rem;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.card-body button:hover {
+    background-color: #c82333;
+}
+
+
+/* Estilos para el mensaje de WhatsApp */
+#whatsapp-boton {
+    display: block;
+    width: 100%;
+    background-color: #25D366;
+    border: none;
+    color: white;
+    font-size: 1.25rem;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 30px;
+}
+
+#whatsapp-boton:hover {
+    background-color: #128C7E;
+}
+
+#whatsapp-boton i {
+    margin-right: 10px;
+}
+
+/* Estilo para el texto previo al botón de WhatsApp */
+#checkout-message {
+    font-size: 1.1rem;
+    color: #666;
+    text-align: center;
+    margin-bottom: 20px;
+    line-height: 1.6;
+    font-weight: 300;
+}
+
+
+
+.row .col-12 {
+    padding: 10px;
+}
+/* Estilos para el contenedor del checkout */
+#checkout-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Espacio entre los productos */
+}
+
+/* Estilo de la tarjeta del producto */
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 51px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Estilo para el cuerpo de la tarjeta */
+.card-body {
+    display: flex;
+    flex-direction: column; /* Coloca el texto en columna */
+    flex-grow: 1; /* Permite que ocupe el espacio disponible */
+}
+
+/* Título del producto */
+.card-body h5 {
+    font-size: 1.5rem; /* Tamaño del título */
+    color: #333; /* Color del texto */
+    margin: 0; /* Elimina el margen por defecto */
+}
+
+/* Descripción del producto */
+.card-body p {
+    color: #555; /* Color del texto de descripción */
+    font-size: 1rem; /* Tamaño del texto */
+    margin: 5px 0; /* Espaciado superior e inferior */
+}
+
+/* Estilo para el precio del producto */
+.card-body .price {
+    font-size: 1.25rem; /* Tamaño del texto de precio */
+    color: #28a745; /* Color verde para el precio */
+    font-weight: bold; /* Negrita para destacar el precio */
+    margin-top: 10px; /* Espaciado superior */
+}
+
+
+/* Precio total */
+.alert-info {
+    background-color: #e9ecef; /* Color de fondo */
+    border-color: #d6d8db; /* Color del borde */
+    color: #495057; /* Color del texto */
+    font-size: 1.2rem; /* Tamaño del texto */
+    padding: 15px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    font-weight: bold; /* Negrita */
+    text-align: center; /* Centrar texto */
+    margin-top: 20px; /* Espaciado superior */
+}
+
+/* Estilo para mensajes informativos */
+#checkout-message {
+    font-size: 1.1rem; /* Tamaño del texto */
+    color: #666; /* Color del texto */
+    text-align: center; /* Centrar el texto */
+    margin-bottom: 20px; /* Espaciado inferior */
+    line-height: 1.6; /* Altura de línea para mejorar legibilidad */
+    font-weight: 300; /* Peso de fuente ligero */
+}
+
+.whatsapp-button {
+    display: inline-flex!important;
+    align-items: center!important;
+    gap: 10px!important;
+    padding: 10px 20px!important;
+    color: #fff!important;
+    background-color: #25d366!important;
+    text-decoration: none!important;
+    font-size: 16px!important;
+    border-radius: 5px!important;
+    transition: background-color 0.3s!important;
+}
+
+.whatsapp-button:hover {
+    background-color: #1eb252!important;
+}
+
+.whatsapp-button i {
+    font-size: 20px;
+}

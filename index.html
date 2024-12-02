@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agrosur</title>
+    <meta name="description" content="Agrosur - Maquinaria agrícola y utilidades de mantenimiento de exteriores">
+    <meta name="keywords" content="maquinaria agrícola, mantenimiento exterior, Agrosur">
+    <link rel="shortcut icon" href="./media/logo-agrosur-isotipo.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=NombreDeLaFuente&display=swap" rel="stylesheet">  
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/styles.css">    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.9.1/font/bootstrap-icons.min.css">
+</head><!-- Bootstrap CSS -->
+<body>
+    <!-- Menú de navegación -->
+    <header>
+         <!-- Barra superior -->
+    <div class="top-bar">
+        <span><i class="bi bi-envelope" href="mailto:servicios@agrosur.com.ar"></i> servicios@agrosur.com.ar | <i class="bi bi-clock"></i> Lunes a Viernes 8:00 hs a 12:30 hs – 15:30 hs a 19:30 hs.</span>
+    </div>
+    <!-- Navbar tradicional -->
+    <nav class="navbar-desktop">
+        <div  href="index.html" class="logo">
+            <img src="./media/logo-text.PNG" alt="Logo de Agrosur">
+        </div>
+        <!-- Menu Items -->
+        <div class="menu-items">
+            <a href="#" id="productos">PRODUCTOS</a>
+            <a href="repuesto.html">REPUESTOS</a>
+            <a href="#contacto">CONTACTO</a>
+            <a href="turnos.html" class="turnos"><i class="bi bi-calendar-event"></i> TURNOS</a>
+        </div>
+        <!-- Menu de marcas (solo visible en pantallas pequeñas) -->
+        <div id="brands-dropdown" class="brands-dropdown">
+            <a href="productos.html?marca=case">CASE IH</a>
+            <a href="productos.html?marca=mainero">MAINERO</a>
+            <a href="productos.html?marca=crucianelli">CRUCIANELLI</a>
+            <a href="productos.html?marca=husqvarna">HUSQVARNA</a>
+            <a href="productos.html?marca=usados">USADOS</a>
+        </div>
+        <!-- Iconos de redes sociales -->
+        <div class="social-icons">
+            <a href="https://wa.me/5492223511236?text=Hola,%20me%20gustaría%20consultar%20sobre%20un%20producto%20de%20la%20Página."><i class="bi bi-whatsapp"></i></a>
+            <a href="https://www.facebook.com/agrosur1962"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.instagram.com/agrosur1962/"><i class="bi bi-instagram"></i></a>
+        </div>
+    </nav>
+    <div id="product-selector" class="product-selector">
+        <div class="product">
+            <a href="productos.html?marca=case"><img src="./media/fondo-case.jpg"  class="fondo-img" alt="Case"></a>
+            <a href="productos.html?marca=case"><img src="./media/marca_2.png" alt="Logo CASE" class="brand-logo logo-case"></a>
+        </div>
+        <div class="product">
+           <a href="productos.html?marca=mainero"><img src="./media/fondo-mainero.jpg" class="fondo-img" alt="Mainero"></a>
+           <a href="productos.html?marca=mainero"><img src="./media/mainero-navbar.jpg" alt="Logo Mainero" class="brand-logo"></a>
+        </div>
+        <div class="product">
+            <a href="productos.html?marca=crucianelli"><img src="./media/fondo-crucianelli.jpg" class="fondo-img" alt="Crucianelli"></a>
+            <a href="productos.html?marca=crucianelli"><img src="./media/crucianelli-navbar.jpg" alt="Logo Crucianelli" class="brand-logo logo-crucianelli"></a>
+        </div>
+        <div class="product">
+            <a href="productos.html?marca=husqvarna"><img src="./media/fondo-husqvarna-2.jpg" class="fondo-img" alt="Husqvarna"></a>
+            <a href="productos.html?marca=husqvarna"><img src="./media/husqvarna-logo.png" alt="Logo Husqvarna" class="brand-logo logo-husqvarna"></a>
+        </div>
+        <div class="product">
+            <a href="productos.html?marca=usados"><img src="./media/fondo-usadas.jpg" class="fondo-img" alt="Usados"></a>
+            <a href="productos.html?marca=usados"><img src="./media/Usados-removebg-preview.png" alt="Logo uSADOS" class="brand-logo"></a>
+        </div>
+    </div>        
+    <!-- Menu Hamburguesa (para pantallas pequeñas) -->
+    <nav class="navbar-hamburger">
+        <div class="logo">
+            <img src="./media/logo-text.PNG" alt="Logo de Agrosur">
+        </div>
+        <!-- Botón de menú hamburguesa -->
+        <div class="hamburger-menu" id="hamburger-menu">
+            <i class="bi bi-list"></i>
+        </div>
+        <!-- Menu Items -->
+        <div class="menu-items" id="menu-items">
+            <a href="#" id="productos-menu">PRODUCTOS</a>
+            <div id="productos-dropdown" class="productos-dropdown">
+                <div class="producto">
+                    <a class="product-name"  href="productos.html?marca=case">CASE IH</a>
+                </div>
+                <div class="producto">
+                    <a class="product-name"  href="productos.html?marca=mainero">MAINERO</a>
+                </div>
+                <div class="producto">
+                    <a class="product-name"  href="productos.html?marca=crucianelli">CRUCIANELLI</a>
+                </div>
+                <div class="producto">
+                    <a class="product-name"  href="productos.html?marca=husqvarna">HUSQVARNA</a>
+                </div>
+                <div class="producto">
+                    <a class="product-name" href="productos.html?marca=usados">USADOS</a>
+                </div>
+            </div>
+            <a href="repuesto.html">REPUESTOS</a>
+            <a href="#contacto">CONTACTO</a>
+            <a href="turnos.html" class="turnos"><i class="bi bi-calendar-event"></i> TURNOS</a>
+        </div>
+        <!-- Iconos de redes sociales -->
+        <div class="icons-menu">
+            <a href="https://wa.me/5492223511236?text=Hola,%20me%20gustaría%20consultar%20sobre%20un%20producto%20de%20la%20Página."><i class="bi bi-whatsapp"></i></a>
+            <a href="https://www.facebook.com/agrosur1962"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.instagram.com/agrosur1962/"><i class="bi bi-instagram"></i></a>
+        </div>
+    </nav>
+    <script>
+
+        // Lógica para mostrar y ocultar el selector de productos al hacer clic en "PRODUCTOS"
+        document.getElementById('productos').addEventListener('click', function() {
+            var productDropdown = document.getElementById('productos-dropdown');
+            productDropdown.style.display = productDropdown.style.display === 'block' ? 'none' : 'block';
+        });
+
+        // Mostrar/Ocultar el menú hamburguesa
+        document.getElementById('hamburger-menu').addEventListener('click', function() {
+            var menuItems = document.getElementById('menu-items');
+            menuItems.classList.toggle('show');
+        });
+        // Lógica para mostrar y ocultar el selector de productos al hacer clic en "PRODUCTOS"
+        document.getElementById('productos').addEventListener('click', function() {
+            var productSelector = document.getElementById('product-selector');
+            productSelector.style.display = productSelector.style.display === 'grid' ? 'none' : 'grid';
+        });
+        document.addEventListener("DOMContentLoaded", () => {
+    const productosTrigger = document.getElementById("productos-menu");
+    const dropdown = document.getElementById("productos-dropdown");
+
+    productosTrigger.addEventListener("click", (event) => {
+        event.preventDefault();
+        dropdown.style.display = dropdown.style.display === "block" ? "none" : "block";
+    });
+
+    // Opcional: Cerrar el menú si se hace clic fuera
+    document.addEventListener("click", (event) => {
+        if (!productosTrigger.contains(event.target) && !dropdown.contains(event.target)) {
+            dropdown.style.display = "none";
+        }
+    });
+});
+
+    </script>
+    </header id="inicio">  
+        <section id="carousel" class="carousel slide banner" data-ride="carousel" data-interval="4000">
+            <div class="carousel-inner">
+                <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+                    <i class="bi bi-arrow-left-circle arrow-left" style="color: #ce0000;"></i>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+                    <i class="bi bi-arrow-right-circle arrow-right" style="color: #ce0000; margin-right: 1%;"></i>
+                    <span class="sr-only">Next</span>
+                </a>
+                <div class="carousel-item active">
+                    <img src="/media/galeria-11.jpg" class="d-block w-500" style="height: 1800px;" alt="tractores y cosechadora en imagen editada con vivuales" loading="lazy">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2 class="slogan">-SOMOS AGROSUR-<br>
+                            Sigue su Marcha sembrando progreso</h2>
+                        <div class="cta-button">
+                            <a href="#ofertas" class="btn btn-custom">Ver Ofertas</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="/media/galeria-9.jpg" class="d-block w-100" alt="tractor en un paisaje" loading="lazy">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2 class="slogan">-SOMOS AGROSUR-<br>
+                            Sigue su Marcha sembrando progreso</h2>
+                        <div class="cta-button">
+                            <a href="#ofertas" class="btn btn-custom">Ver Ofertas</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="/media/AXIAL FLOW 250.jpg" class="d-block w-100" alt="cosechadora de granos finos trabajando" loading="lazy">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2 class="slogan">-SOMOS AGROSUR-<br>
+                            Sigue su Marcha sembrando progreso</h2>
+                        <div class="cta-button">
+                            <a href="#ofertas" class="btn btn-custom">Ver Ofertas</a>
+                        </div>
+                    </div>
+                </div>
+        </section>      
+    <!-- Nuestras marcas -->
+    <section class="marcas mt-5">
+        <div class="row">
+            <div class="marca-img col-md-4 text-center">
+                <img src="./media/marca_1.jpg" alt="Marca 1" class="img-fluid marca-img" style="height: auto; width: 200px;">
+            </div>
+            <div class="marca-central col-md-4 text-center">
+                <img src="./media/marca_2.png" alt="Marca 2" class="img-fluid marca-img marca-central" style="height: auto; width: 250px;">
+            </div>
+            <div class="marca-img col-md-4 text-center">
+                <img src="./media/marca_3.jpg" alt="Marca 3" class="img-fluid marca-img" style="height: auto; width: 200px;">
+            </div>
+        </div>
+    </section>
+        <!-- Sección de Formulario de Suscripción -->
+<section class="subscription-section" id="ofertas">
+    <h2>Suscríbete a Nuestro Boletín</h2>
+    <p>¡No te pierdas nuestras últimas ofertas y novedades! Ingresa tu correo electrónico para recibir actualizaciones.</p>
+    <form id="subscription-form">
+        <input type="email" placeholder="Ingresa tu correo electrónico" required />
+        <button type="submit" href="mailto:marketing@agrosur.com.ar">Suscribirse</button>
+    </form>
+</section>
+<section class="gallery-section">
+    <div class="gallery-container">
+        <div class="gallery-grid">
+            <div class="gallery-item large-item">
+                <img src="./media/galeria-2.jpg" alt="paisaje de un campo en epoca de cosecha" loading="lazy">
+            </div>
+            <div class="gallery-item half-item">
+                <img src="media/galeria-8.jpg" alt="tractor con un paisaje de fondo" loading="lazy">
+            </div>
+            <div class="gallery-item half-item">
+                <img src="./media/galeria-3.jpg" alt="maquinaria de campo funcionando" loading="lazy">
+            </div>
+            <div class="gallery-item half-item">
+                <img src="media/galeria-7.jpg" alt="cosechadora trabajando" loading="lazy">
+            </div>
+            <div class="gallery-item half-item">
+                <img src="./media/galeria-4.jpg" alt="planta de trigo en primer plano" loading="lazy">
+            </div>
+            <div class="gallery-item large-item">
+                <img src="./media/galeria-5.jpg" alt="patriot 300 trabajando el campo" loading="lazy">
+            </div>
+        </div>
+    </div>
+</section>   
+    <!-- Sección de contacto --> 
+    <section id="contacto" class="contacto">
+        <h2>Contacto</h2>
+        <div class="row">
+            <div class="form-contact">
+                <form>
+                    <div class="form-group">
+                        <label for="name">Nombre</label>
+                        <input type="text" class="form-control" id="name" placeholder="Tu nombre">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Correo Electrónico</label>
+                        <input type="email" class="form-control" id="email" placeholder="Tu correo electrónico">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Mensaje</label>
+                        <textarea class="form-control" id="message" rows="3" placeholder="Tu mensaje"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-custom" href="mailto:administracion@agrosur.com.ar">Enviar</button>
+                </form>
+                <p class="mt-3">También puedes enviarnos un mensaje por redes sociales:</p>
+                <div class="social-icon d-flex icon-item">
+                    <a href="https://www.facebook.com/agrosur1962" class="me-3"target="_blank"><i class="bi bi-facebook" style="color: black;"></i></a>
+                    <a href="https://www.instagram.com/agrosur1962/" target="_blank"><i class="bi bi-instagram" style="color: black;"></i></a>
+                </div>
+            </div>
+            <div class="map-contact">
+                <h2>Encuéntranos en</h2>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12948.888589252401!2d-58.49726015!3d-35.769919099999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9597f11adf9c43c1%3A0x7135506d9a6da4b2!2sAgrosur%20Belgrano!5e0!3m2!1ses-419!2sar!4v1729000453519!5m2!1ses-419!2sar" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section about">
+                <h2>SOBRE NOSOTROS</h2>
+                <p>Somos una empresa argentina con más de 60 años de experiencia en el sector agroindustrial. Fundada en 1962 como concesionaria, nos especializamos en la venta de maquinaria agrícola de las mejores marcas del mercado.</p>
+            </div>
+            
+            <div class="footer-section links">
+                <h2>ENLACES RAPIDOS</h2>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="repuesto.html">Repuestos</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                    <li><a href="turnos.html">Turnos</a></li>
+                </ul>
+            </div>
+            <div class="footer-section weather">
+                <h2>CLIMA</h2>
+                <p>General Belgrano</p>
+                <div id="TT_JeAwwgAwwd2a1esAKASk1EEkkWu1MChFbt1d1ciIqkzWeueuu">El tiempo - Tutiempo.net</div>
+                <script type="text/javascript" src="https://www.tutiempo.net/s-widget/l_JeAwwgAwwd2a1esAKASk1EEkkWu1MChFbt1d1ciIqkzWeueuu"></script>
+            </div>
+            <div class="cotizaciones-panel footer-section">
+                <h2>COTIZACIONES</h2>
+                <!-- Cotización Dólar -->
+                <div class="cotizacion dolar">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>DÓLAR</th>
+                                <th>Compra</th>
+                                <th>Venta</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Banco Nación</td>
+                                <td id="compraDolar">$0.00</td>
+                                <td id="ventaDolar">$0.00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>  
+            </div>
+            <div class="footer-section contact">
+                <h2>CONTACTANOS</h2>
+                <p>Email: <a href="mailto:servicios@agrosur.com.ar">servicios@agrosur.com.ar</a></p>
+                <p>Teléfono: <a href="https://wa.me/5492243454191?text=Hola,%20me%20gustaría%20consultar%20sobre%20un%20producto%20de%20la%20Página."> +54 9 2243 454191</a></p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/agrosur1962" target="_blank"><i class="bi bi-facebook" style="color: #ce0000;"></i></a>
+                    <a href="https://www.instagram.com/agrosur1962/" target="_blank"><i class="bi bi-instagram" style="color: #ce0000;"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024 Agrosur JL. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    <script src="./js/app.js"></script>
+    <script src="./js/script.js"></script> <!-- Enlace al archivo JavaScript -->
+</body>
+    <!-- Enlazar Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</html>   

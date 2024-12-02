@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="shortcut icon" href="./media/logo-agrosur-isotipo.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/checkout.css"> <!-- Tus estilos personalizados -->
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.9.1/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <header>
+        <!-- Barra superior -->
+   <div class="top-bar">
+       <span><i class="bi bi-envelope" href="mailto:servicios@agrosur.com.ar"></i> servicios@agrosur.com.ar | <i class="bi bi-clock"></i> Lunes a Viernes 8:00 hs a 12:30 hs – 15:30 hs a 19:30 hs.</span>
+   </div>
+   <!-- Navbar tradicional -->
+   <nav class="navbar-desktop">
+       <a href="index.html" class="logo">
+           <img src="./media/logo-text.PNG" href="index.html" alt="Logo de Agrosur">
+       </a>
+       <!-- Menu Items -->
+       <div class="menu-items">
+           <a href="#" id="productos">PRODUCTOS</a>
+           <a href="repuesto.html">REPUESTOS</a>
+           <a href="index.html">CONTACTO</a>
+           <a href="turnos.html" class="turnos"><i class="bi bi-calendar-event"></i> TURNOS</a>
+       </div>
+       <!-- Menu de marcas (solo visible en pantallas pequeñas) -->
+       <div id="brands-dropdown" class="brands-dropdown">
+           <a href="productos.html?marca=case">CASE IH</a>
+           <a href="productos.html?marca=mainero">MAINERO</a>
+           <a href="productos.html?marca=crucianelli">CRUCIANELLI</a>
+           <a href="productos.html?marca=husqvarna">HUSQVARNA</a>
+           <a href="productos.html?marca=usados">USADOS</a>
+       </div>
+       <!-- Iconos de redes sociales -->
+       <div class="social-icons">
+           <a href="https://wa.me/5492223511236?text=Hola,%20me%20gustaría%20consultar%20sobre%20un%20producto%20de%20la%20Página."><i class="bi bi-whatsapp"></i></a>
+           <a href="https://www.facebook.com/agrosur1962"><i class="bi bi-facebook"></i></a>
+           <a href="https://www.instagram.com/agrosur1962/"><i class="bi bi-instagram"></i></a>
+       </div>
+   </nav>
+   <div id="product-selector" class="product-selector">
+       <div class="product">
+           <a href="productos.html?marca=case"><img src="./media/fondo-case.jpg"  class="fondo-img" alt="Case"></a>
+           <a href="productos.html?marca=case"><img src="./media/marca_2.png" alt="Logo CASE" class="brand-logo logo-case"></a>
+       </div>
+       <div class="product">
+          <a href="productos.html?marca=mainero"><img src="./media/fondo-mainero.jpg" class="fondo-img" alt="Mainero"></a>
+          <a href="productos.html?marca=mainero"><img src="./media/mainero-navbar.jpg" alt="Logo Mainero" class="brand-logo"></a>
+       </div>
+       <div class="product">
+           <a href="productos.html?marca=crucianelli"><img src="./media/fondo-crucianelli.jpg" class="fondo-img" alt="Crucianelli"></a>
+           <a href="productos.html?marca=crucianelli"><img src="./media/crucianelli-navbar.jpg" alt="Logo Crucianelli" class="brand-logo logo-crucianelli"></a>
+       </div>
+       <div class="product">
+           <a href="productos.html?marca=husqvarna"><img src="./media/fondo-husqvarna-2.jpg" class="fondo-img" alt="Husqvarna"></a>
+           <a href="productos.html?marca=husqvarna"><img src="./media/husqvarna-logo.png" alt="Logo Husqvarna" class="brand-logo logo-husqvarna"></a>
+       </div>
+       <div class="product">
+           <a href="productos.html?marca=usados"><img src="./media/fondo-usadas.jpg" class="fondo-img" alt="Usados"></a>
+           <a href="productos.html?marca=usados"><img src="./media/Usados-removebg-preview.png" alt="Logo uSADOS" class="brand-logo"></a>
+       </div>
+   </div>        
+   <!-- Menu Hamburguesa (para pantallas pequeñas) -->
+   <nav class="navbar-hamburger">
+       <a href="index.html" class="logo">
+           <img src="./media/logo-text.PNG"  alt="Logo de Agrosur">
+       </a>
+       <!-- Botón de menú hamburguesa -->
+       <div class="hamburger-menu" id="hamburger-menu">
+           <i class="bi bi-list"></i>
+       </div>
+       <!-- Menu Items -->
+       <div class="menu-items" id="menu-items">
+           <a id="productos">PRODUCTOS</a>
+           <div id="productos-dropdown" class="productos-dropdown">
+               <div class="product">
+                   <div class="product-name"  href="productos.html?marca=case">CASE IH</div>
+               </div>
+               <div class="product">
+                   <div class="product-name"  href="productos.html?marca=mainero">MAINERO</div>
+               </div>
+               <div class="product">
+                   <div class="product-name"  href="productos.html?marca=crucianelli">CRUCIANELLI</div>
+               </div>
+               <div class="product">
+                   <div class="product-name"  href="productos.html?marca=husqvarna">HUSQVARNA</div>
+               </div>
+               <div class="product">
+                   <div class="product-name" href="productos.html?marca=usados">USADOS</div>
+               </div>
+           </div>
+           <a href="repuesto.html">REPUESTOS</a>
+           <a href="index.html">CONTACTO</a>
+           <a href="turnos.html" class="turnos"><i class="bi bi-calendar-event"></i> TURNOS</a>
+       </div>
+       <!-- Iconos de redes sociales -->
+       <div class="icons-menu">
+           <a href="https://wa.me/5492223511236?text=Hola,%20me%20gustaría%20consultar%20sobre%20un%20producto%20de%20la%20Página."><i class="bi bi-whatsapp"></i></a>
+           <a href="https://www.facebook.com/agrosur1962"><i class="bi bi-facebook"></i></a>
+           <a href="https://www.instagram.com/agrosur1962/"><i class="bi bi-instagram"></i></a>
+       </div>
+   </nav>
+   <script>
+       // Lógica para mostrar y ocultar el selector de productos al hacer clic en "PRODUCTOS"
+       document.getElementById('productos').addEventListener('click', function() {
+           var productDropdown = document.getElementById('productos-dropdown');
+           productDropdown.style.display = productDropdown.style.display === 'block' ? 'none' : 'block';
+       });
+
+       // Mostrar/Ocultar el menú hamburguesa
+       document.getElementById('hamburger-menu').addEventListener('click', function() {
+           var menuItems = document.getElementById('menu-items');
+           menuItems.classList.toggle('show');
+       });
+       // Lógica para mostrar y ocultar el selector de productos al hacer clic en "PRODUCTOS"
+       document.getElementById('productos').addEventListener('click', function() {
+           var productSelector = document.getElementById('product-selector');
+           productSelector.style.display = productSelector.style.display === 'grid' ? 'none' : 'grid';
+       });
+   </script>
+   </header id="inicio">  
+   <div class="container card card-body" id="checkout-container">
+    <h1>Contactanos</h1>
+    <p>Si deseas más información sobre este producto, contáctanos a través de WhatsApp y te dirigiras con un asesor con el que puedas hablar.</p>
+    <a 
+        href="https://api.whatsapp.com/send?phone=5492223511236&text=Hola,%20me%20gustaría%20consultar%20sobre%20un%20producto%20de%20la%20Pagina." 
+        target="_blank" 
+        class="btn whatsapp-button"
+    >
+        <i class="bi bi-whatsapp"></i> Contactar por WhatsApp
+    </a>
+    </div>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section about">
+                <h2>SOBRE NOSOTROS</h2>
+                <p>Somos una empresa argentina con más de 60 años de experiencia en el sector agroindustrial. Fundada en 1962 como concesionaria, nos especializamos en la venta de maquinaria agrícola de las mejores marcas del mercado.</p>
+            </div>
+            
+            <div class="footer-section links">
+                <h2>ENLACES RAPIDOS</h2>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="repuesto.html">Repuestos</a></li>
+                    <li><a href="index.html#contacto">Contacto</a></li>
+                    <li><a href="turnos.html">Turnos</a></li>
+                </ul>
+            </div>
+            <div class="footer-section weather">
+                <h2>CLIMA</h2>
+                <p>General Belgrano</p>
+                <div id="TT_JeAwwgAwwd2a1esAKASk1EEkkWu1MChFbt1d1ciIqkzWeueuu">El tiempo - Tutiempo.net</div>
+                <script type="text/javascript" src="https://www.tutiempo.net/s-widget/l_JeAwwgAwwd2a1esAKASk1EEkkWu1MChFbt1d1ciIqkzWeueuu"></script>
+            </div>
+            <div class="cotizaciones-panel footer-section">
+                <h2>COTIZACIONES</h2>
+                <!-- Cotización Dólar -->
+                <div class="cotizacion dolar">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>DÓLAR</th>
+                                <th>Compra</th>
+                                <th>Venta</th>
+                                <th>Var</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Banco Nación</td>
+                                <td id="compraDolar">$0.00</td>
+                                <td id="ventaDolar">$0.00</td>
+                                <td id="varDolar">↑</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>  
+            </div>
+            <div class="footer-section contact">
+                <h2>CONTACTANOS</h2>
+                <p>Email: <a href="mailto:servicios@agrosur.com.ar">servicios@agrosur.com.ar</a></p>
+                <p>Teléfono: <a href="https://wa.me/5492243454191?text=Hola,%20me%20gustaría%20consultar%20sobre%20un%20producto%20de%20la%20Página."> +54 9 2243 454191</a></p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/agrosur1962" target="_blank"><i class="bi bi-facebook" style="color: #ce0000;"></i></a>
+                    <a href="https://www.instagram.com/agrosur1962/" target="_blank"><i class="bi bi-instagram" style="color: #ce0000;"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024 Agrosur JL. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    <script src="./js/productos.js"></script> <!-- Asegúrate de cambiar esto a la ruta correcta -->
+    <script src="./js/checkout.js"></script> <!-- Si tienes un script específico para el checkout -->
+    <script src="./js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,281 @@
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+}
+#turno{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+#turno {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centrar horizontalmente */
+    text-align: center; /* Alineación de texto */
+    gap: 20px; /* Espacio entre elementos */
+}
+
+.text-center{
+    align-items: center;
+    text-align: center;
+}
+#appointment-form {
+    background-color: #f7f7f7;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #ce0000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #ce0000;
+    font-size: 2em;
+}
+
+p.text-center {
+    text-align: center;
+    font-size: 1.1em;
+    color: #6c757d;
+}
+.fc-header-toolbar{
+    gap: 50px;
+}
+/* Calendario */
+#calendar {
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 123, 255, 0.2);
+    width: 500px;
+}
+
+.fc .fc-toolbar-title {
+    font-size: 1.5em;
+    color: #ce0000;
+}
+
+.fc .fc-daygrid-day-frame {
+    padding: 10px;
+    color: #333;
+}
+
+.fc .fc-button {
+    background-color: #ce0000;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin: 5px;
+}
+
+.fc .fc-button:hover {
+    background-color: #a70202;
+}
+
+/* Formulario de confirmación de turno */
+#appointment-form {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f1f1f1;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#appointment-form h2 {
+    color: #ce0000;
+    font-size: 1.8em;
+    text-align: center;
+}
+
+#appointment-form label {
+    display: block;
+    font-size: 1em;
+    margin: 10px 0 5px;
+    color: #333;
+}
+
+#appointment-form input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+#appointment-form button {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    background-color: #ce0000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.fc-col-header-cell-cushion {
+    background-color: #555;
+    color: white;
+}
+.fc-col-header-cell-cushion:hover{
+    color: #ce0000;
+}
+
+.fc-button {
+    background-color: #ce0000!important;
+}
+#appointment-form button:hover {
+    background-color: #a70202;
+}
+/* Ajusta la barra de herramientas del encabezado del calendario */
+.fc-toolbar {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos salten a la siguiente línea si no caben */
+    justify-content: space-between; /* Espacio uniforme entre los elementos */
+    align-items: center;
+}
+
+/* Botones de navegación (flechas) */
+.fc-prev-button, .fc-next-button {
+    flex-shrink: 0; /* Evita que las flechas se reduzcan demasiado */
+    margin: 0 5px; /* Espaciado lateral */
+}
+
+/* Botón "Today" */
+.fc-today-button {
+    order: 2; /* Mueve el botón Today hacia el final si es necesario */
+    margin: 5px 0;
+}
+
+/* Título del mes */
+.fc-toolbar-title {
+    flex-grow: 1; /* Ocupa el espacio disponible */
+    text-align: center; /* Centra el texto */
+    margin: 0 10px; /* Espaciado lateral */
+    font-size: 1.2em; /* Ajusta el tamaño del texto */
+    white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 100%;
+        margin: 10px;
+        padding: 15px;
+        border-radius: 5px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    p.text-center {
+        font-size: 1em;
+    }
+
+    #turno {
+        margin: 30px 5%;
+        gap: 15px;
+    }
+
+    #calendar {
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    #appointment-form {
+        padding: 10px;
+        margin-top: 15px;
+    }
+
+    #appointment-form h2 {
+        font-size: 1.5em;
+    }
+
+    #appointment-form input {
+        padding: 8px;
+        font-size: 0.9em;
+    }
+
+    button {
+        padding: 8px;
+        font-size: 0.9em;
+    }
+
+    .fc-toolbar-title {
+        font-size: 1.2em;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.2em;
+    }
+
+    p.text-center {
+        font-size: 0.9em;
+    }
+
+    #calendar {
+        width: 100%;
+    }
+
+    #appointment-form {
+        padding: 8px;
+    }
+
+    #appointment-form h2 {
+        font-size: 1.2em;
+    }
+
+    button {
+        font-size: 0.8em;
+        padding: 6px;
+    }
+
+    .fc-toolbar-title {
+        font-size: 1em;
+    }
+}
+@media (max-width: 768px) {
+    .fc-toolbar {
+        flex-direction: column; /* Coloca los elementos en una columna */
+        align-items: stretch; /* Estira los elementos al ancho disponible */
+        gap: 10px; /* Espaciado entre los elementos */
+    }
+
+    .fc-toolbar-title {
+        font-size: 1em; /* Reduce el tamaño del título */
+    }
+
+    .fc-prev-button, .fc-next-button, .fc-today-button {
+        margin: 5px auto; /* Centra los botones */
+        width: 100%; /* Botones ocupan todo el ancho */
+    }
+}
