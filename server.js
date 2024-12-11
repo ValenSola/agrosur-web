@@ -9,8 +9,12 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 
 // Middleware
-app.use(cors());
+app.use(cors({
+  origin: '*' // Permitir todas las solicitudes
+}));
+
 app.use(express.json());
+
 
 // Conexión a MongoDB
 mongoose
@@ -37,7 +41,6 @@ app.get('/productos/:marca', async (req, res) => {
   }
 });
 
-// Iniciar servidor
-app.listen(PORT, () => {
+app.listen(PORT, '0.0.0.0', () => {
   console.log(`Servidor corriendo en http://localhost:${PORT}`);
 });
